@@ -1,0 +1,43 @@
+# 2161. Partition Array According to Given Pivot
+
+**Language:** Java
+
+## Difficulty
+
+Medium
+
+## Topics
+
+- Array
+- Two Pointers
+- Simulation
+
+## Problem Statement
+
+Given an integer array `nums` and an integer `pivot`, rearrange the array such that:
+
+- All elements less than `pivot` appear first.
+- All elements equal to `pivot` appear next.
+- All elements greater than `pivot` appear last.
+
+The relative order of the elements in each group should be preserved.
+
+## Approach
+
+This solution uses an auxiliary array to partition the elements into three groups.
+
+- Create a copy of the original array.
+- Traverse the copied array three times:
+  1. Copy all elements smaller than the pivot into the original array.
+  2. Copy all elements equal to the pivot.
+  3. Copy all elements greater than the pivot.
+- Return the modified array.
+
+## Complexity Analysis
+
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(n)
+
+## Java Solution
+
+See `Solution.java` for the complete implementation.

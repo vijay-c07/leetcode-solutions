@@ -1,0 +1,38 @@
+# 0206. Reverse Linked List
+
+**Language:** Java
+
+## Difficulty
+
+Easy
+
+## Topics
+
+- Linked List
+
+## Problem Statement
+
+Given the head of a singly linked list, reverse the list and return the reversed list.
+
+## Approach
+
+This solution uses an **iterative approach** to reverse the linked list in-place.
+
+- If the list is empty, return `head`.
+- Initialize `curr` to the second node and set `head.next` to `null` since the original head becomes the last node after reversal.
+- Traverse the list while `curr` is not `null`.
+- For each node:
+  - Store the next node in a temporary variable.
+  - Reverse the current node's pointer to point to the previous node (`head`).
+  - Move `head` to the current node.
+  - Move `curr` to the next node.
+- After the traversal, `head` points to the new head of the reversed linked list.
+
+## Complexity Analysis
+
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(1)
+
+## Java Solution
+
+See `Solution.java` for the complete implementation.

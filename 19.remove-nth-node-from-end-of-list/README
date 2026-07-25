@@ -1,0 +1,37 @@
+# 0019. Remove Nth Node From End of List
+
+**Language:** Java
+
+## Difficulty
+
+Medium
+
+## Topics
+
+- Linked List
+- Two Pointers
+
+## Problem Statement
+
+Given the head of a linked list, remove the `n`th node from the end of the list and return its head.
+
+## Approach
+
+This solution uses the **two-pointer technique** along with a **dummy node**.
+
+- A dummy node is created before the head to simplify edge cases, such as removing the first node.
+- Both `slow` and `fast` pointers start at the dummy node.
+- Move the `fast` pointer `n + 1` steps ahead.
+- Move both pointers one step at a time until `fast` reaches the end of the list.
+- At this point, `slow` points to the node just before the one that needs to be removed.
+- Update the links by setting `slow.next = slow.next.next`.
+- Return `dummy.next` as the new head of the list.
+
+## Complexity Analysis
+
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(1)
+
+## Java Solution
+
+See `Solution.java` for the complete implementation.

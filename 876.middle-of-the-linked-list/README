@@ -1,0 +1,38 @@
+# 0876. Middle of the Linked List
+
+**Language:** Java
+
+## Difficulty
+
+Easy
+
+## Topics
+
+- Linked List
+- Two Pointers
+
+## Problem Statement
+
+Given the head of a singly linked list, return the middle node of the linked list.
+
+If there are two middle nodes, return the second middle node.
+
+## Approach
+
+This solution uses the **slow and fast pointer technique**.
+
+- Initialize two pointers, `slow` and `fast`, at the head of the list.
+- Move `slow` one node at a time.
+- Move `fast` two nodes at a time.
+- Continue until `fast` reaches the end of the list or `fast.next` becomes `null`.
+- When the loop ends, `slow` will be pointing to the middle node.
+- If the list has an even number of nodes, `slow` naturally points to the second middle node, as required.
+
+## Complexity Analysis
+
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(1)
+
+## Java Solution
+
+See `Solution.java` for the complete implementation.

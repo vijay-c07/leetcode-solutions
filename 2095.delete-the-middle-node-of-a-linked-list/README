@@ -1,0 +1,41 @@
+# 2095. Delete the Middle Node of a Linked List
+
+**Language:** Java
+
+## Difficulty
+
+Medium
+
+## Topics
+
+- Linked List
+- Two Pointers
+
+## Problem Statement
+
+Given the head of a singly linked list, delete the middle node and return the head of the modified linked list.
+
+If the list contains only one node, return `null`.
+
+## Approach
+
+This solution uses the **slow and fast pointer technique**.
+
+- Handle the edge case where the list is empty or contains only one node by returning `null`.
+- Initialize three pointers:
+  - `slow` to find the middle node.
+  - `fast` to move twice as fast as `slow`.
+  - `prev` to keep track of the node before `slow`.
+- Traverse the list until `fast` reaches the end.
+- At this point, `slow` points to the middle node and `prev` points to the node before it.
+- Remove the middle node by updating `prev.next` to `slow.next`.
+- Return the modified head of the linked list.
+
+## Complexity Analysis
+
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(1)
+
+## Java Solution
+
+See `Solution.java` for the complete implementation.

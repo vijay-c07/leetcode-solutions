@@ -1,0 +1,41 @@
+# 2149. Rearrange Array Elements by Sign
+
+**Language:** Java
+
+## Difficulty
+
+Medium
+
+## Topics
+
+- Array
+- Two Pointers
+
+## Problem Statement
+
+You are given an integer array `nums` containing an equal number of positive and negative integers.
+
+Rearrange the array such that positive and negative numbers alternate, starting with a positive number, while preserving their relative order.
+
+## Approach
+
+This solution uses an auxiliary array to temporarily separate positive and negative numbers.
+
+- Create a temporary array `arr` of the same size as the input array.
+- Traverse the original array:
+  - Store positive numbers from the beginning of `arr`.
+  - Store negative numbers from the end of `arr`.
+- Initialize two pointers:
+  - `i` at the beginning of `arr` (positive numbers).
+  - `j` at the end of `arr` (negative numbers).
+- Alternately place positive and negative numbers back into the original array.
+- Return the rearranged array.
+
+## Complexity Analysis
+
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(n)
+
+## Java Solution
+
+See `Solution.java` for the complete implementation.
