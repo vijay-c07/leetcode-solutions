@@ -91,6 +91,6 @@ This repository is intended for learning and interview preparation. Suggestions 
 
 ---
 
-##  If you find this repository helpful, consider giving it a star!
+##   If you find this repository helpful, consider giving it a star!
 
 Happy Coding! 
