@@ -1,4 +1,4 @@
-# 0541. Delete node in a linkedlist
+# 237. Delete node in a linkedlist
 
 **Language:** Java
 
